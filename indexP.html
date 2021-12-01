@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" type="text/css" href="font.css">
+	<link rel="stylesheet" type="text/css" href="estredes.css">
+	<link rel="stylesheet" type="text/css" href="galeria.css">
+
+<title>galeria</title>
+</head>
+<body>
+	<header>
+       <nav>
+ 		 <div class="logo">
+            <img src="can.jpg" alt="logo">
+           
+        </div>
+  		<a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <h1>ALBERGUE DE PERRITOS</h1>
+	 <div class="menu">
+	 	<a href="albergue.html">Inicio </a>
+		<a href="rescates.html">Rescates </a>
+        <a href="crianza.html">Cachorros </a>
+        <a href="adopta.html">Adopta </a>
+        <a href="dona.html">Donación </a>
+        <a href="indexP.html"> galeria</a>
+        <a href="contactos.html">Contacto </a>
+        
+ 	</div>	
+ </nav>
+    </header>
+
+	<div class="social">
+	<ul>
+			<li><a href="http://www.facebook.com" target="_blank" class="icon-facebook"></a></li>
+			<li><a href="https://twitter.com/" target="_blank" class="icon-twitter"></a></li>
+			<li><a href="http://www.youtube.com" target="_blank" class="icon-youtube"></a></li>
+			<li><a href="http://www.google.com" target="_blank" class="icon-google"></a></li>
+			<li><a href="http://www.pinterest.com" target="_blank" class="icon-pinterest"></a></li>
+			<li><a href="mailto:contacto@empresa.com" class="icon-mail"></a></li>
+		</ul>
+	
+</div>
+	<div class="hero" id="hero">
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="img5.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="bebe1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="bebe3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="fam3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="bebe9.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="fami5.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="fam8.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="fami3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="bebe7.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="fami.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+	</div>
+
+
+
+		</div>
+	</div>
+	<footer>
+    	Milania Bautista
+	</footer>
+
+	<script src="app.js"></script>
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

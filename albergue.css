@@ -1,0 +1,176 @@
+body{
+   background-image: url('fondo6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color:whitesmoke;
+    color:black ;
+    margin: 0px;
+    }
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-family: Monaco;
+}
+img{
+display:block;
+margin:auto;
+}
+nav{
+    flex: 2;
+    margin-top: 40px;
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+}
+
+.menu a:hover{
+    color: red;
+}
+.logo {
+   flex: 1;
+    font-weight: 400;
+    margin:0px;
+    background-size: contain;
+    width: 30%;
+    height:0px;
+    float: left;
+}
+section{
+  flex: 3;
+    margin-top: 120px;
+
+}
+
+h1{
+            text-align: center;
+            font-family: Bodoni MT Black;
+        }
+p {
+    font-family: 'arial', cursive;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 25px;
+    color: black;
+}
+h2 {
+    font-family: 'Arial', sans-serif;
+    margin: 15px 25px;
+}
+
+footer{
+     background-color: white;
+    color: black;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    padding:15px;
+    margin: 5px;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a {
+        font-size: 12px;
+    }
+}
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+@media only screen and (max-width: 550px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0em;
+    grid-template-rows: minmax(30px auto);
+}   
+
+.container div{
+    background: black;
+    padding:1em;
+    margin: 25px 25px;
+}
+.container div:hover{
+    border: 10px solid darkred;
+}
+section{
+  flex: 3;
+    margin-top: 120px;
+   }
+table {
+  text-align: center;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 35px 20px;
+   
+}
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+}
+th{
+    text-align: center;
+}
+tr:nth-child(even) {
+  background-color:  #D7BDE2;
+}
